@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
+
 <body>
-    
+    <h1>Pokedex</h1>
+    <table>
+        <!--Imagenes dentro del HTML
+            Para atajar con la estructura del TD, tecleamos¨: 
+            td*4>(img.pokemon+p.nombre)
+        -->
+
+        <tr>
+            <td>
+                <img class="pokemon" src="img/bulbasur.png" alt="bulbasur">
+                <p class="nombre">Bulbasur</p>
+            </td>
+            <td>
+                <img class="pokemon" src="img/Ivysaur.png" alt="vysaur">
+                <p class="nombre">Ivysaur</p>
+            </td>
+            <td>
+                <img class="pokemon" src="img/Venusaur.png" alt="venusaur">
+                <p class="nombre">Venusaur</p>
+            </td>
+            <td>
+                <img class="pokemon" src="img/Charmander.png" alt="charmander">
+                <p class="nombre">Charmander</p>
+            </td>
+        </tr>
+
+        <!-- Imagenes desde CSS -->
+        <!-- Metemos el  -->
+        <tr id="con_imagen_de_fondo">
+            <td id="charmaleon">
+                <p class="nombre">Charmaleon</p>
+            </td>
+            <td id="charizard">
+                <p class="nombre">Charizard</p>
+            </td>
+            <td id="squirtle">
+                <p class="nombre">Squirtle</p>
+            </td>
+            <td id="wartortle">
+                <p class="nombre">Wartortle</p>
+            </td>
+        </tr>
+    </table>
+
+    <!--IMPORTANTISIMO PARA LOS FORMULARIOS!
+    Cada input tiene que ir acompañado de un label:
+    -For tiene que coincidir con name (Se utilizan para el envio de los datos)
+    -Id puede coincidir con el name o no. (Trabajo interno del HTML y CSS)
+-->
+
+    <div id="formulario">
+        <form action="mailto:velis.ks@gmail.com">
+            <div class="elemento">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="Nombre" id="nombre" required>
+            </div>
+
+            <div class="elemento">
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos" required> <!--Required = Campo Obligatorio-->
+            </div>
+
+            <div class="elemento">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="elemento">
+                <label for="fnacimiennti">Fecha Nacimiento: </label>
+                <input type="date" name="fnacimiento" id="fnacimiento">
+            </div>
+
+            <div class="elemento">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>            
+        </form>
+    </div>
+
+    <!-- Ejemplo de contenedor div con mas divs dentro -->
+
+    <div id="ejemplo_display">
+        <div class="dentro">1</div>
+        <div class="dentro">2</div>
+        <div class="dentro">3</div>
+        <div class="dentro">3</div>
+        <div class="dentro">3</div>
+        <div class="dentro">3</div>
+        <div class="dentro">3</div>
+    </div>
+
 </body>
+
+
+
 </html>
