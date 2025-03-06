@@ -1,0 +1,110 @@
+/*Instalamos el font*/
+@font-face {
+    font-family: Pokemon;
+    src: url(../Pokemon\ Solid.ttf);
+    
+}
+
+/*Inicializamos valores siempre con:*/
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14 px; /*establecemos el tamaño del font por defecto*/
+}
+
+body {
+    background-image: url(../img/fondo3.png);
+    background-size: cover; /*ocupa todo el espacio disponible*/
+    background-repeat:repeat
+
+}
+
+h1 {
+    font-family: "Pokemon";
+    color: yellow;
+    /*Damos sombra al texto con el formato sacado de stackoverflow*/
+    text-shadow: -1.5px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+table {
+    width: 80%; /*Tamaño del 80 % del Body*/
+    border: 1px solid black;
+    margin: auto; /*Nos centra la tabla*/
+}
+
+td {
+    background-color: lightgrey; /*color de fondo*/
+    width: 25%; /*el TD coge el 100 % del TR que a su vez coge el 100% de la Tabla*/
+    text-align: center ;/* Centra las imagenes*/
+   
+}
+/*imagenes del primer TR de la tabla*/
+img.pokemon {
+    /* width: 100%; L imagen coge el 100 % del TD */
+    height: 165px;
+    margin: auto;
+
+}
+
+.nombre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+tr#con_imagen_de_fondo{
+    height: 200px;
+}
+tr#con_imagen_de_fondo td{      /* Las imagenes dentro del TD*/
+    background-repeat: no-repeat;
+    background-size:contain;        /*Tamaño del fondo respecto al td: distribucion*/
+    padding-top: 10rem;         /*Emuja el texto hacia abajo*/
+    background-position: 50%; /*Centra la imagen al centro*/
+
+}
+
+td#charmaleon{
+    background-image: url(../img/Charmeleon.png);
+}
+td#charizard{
+    background-image: url(../img/Charizard.png)
+}
+td#squirtle{
+    background-image: url(../img/squirtle.png)
+}
+td#wartortle{
+    background-image: url(../img/wartortle.png)
+}
+
+/*Formulario*/
+#formulario {
+    background-color: rgba(0, 0, 0, 0.7); /*transparente*/
+    color: white; /*color de la letra*/
+    font-family: sans-serif;
+    width: 80%; /* misma anchuara que la tabla*/
+    margin: auto; /*para centar (centro)*/
+    padding: 1rem; /*para separar el texo del borde: para que respire*/
+    margin-top: 2rem; /*Separamos el formulario de la tabla.*/
+}
+
+.elemento label, .elemento input {
+    display: inline-block; /*Alinea los campos en bloque*/
+    width: 10rem; 
+}
+
+/* Ejemplo de display: inline-block */
+
+#ejemplo_display {
+    background-color: brown;
+    width: 800px;
+    height: 300px;
+}
+
+.dentro {
+    background-color: yellowgreen;
+    min-width: 100px;
+    border: 1px solid red;
+    display: inline-block;
+}
